@@ -14,7 +14,7 @@ spec:
     path: charts/podinfo
     ref: master
   values:
-    image: jdavis10213/podinfo:dev-gfix1tj5
+    image: jdavis10213/podinfo:dev-fdorsudn
     replicaCount: 1
     hpa:
       enabled: false
