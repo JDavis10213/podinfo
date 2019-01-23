@@ -14,5 +14,5 @@ spec:
     path: charts/podinfo
     ref: master
   values:
-    image: jdavis10213/podinfo:0.4.10
+    image: jdavis10213/podinfo:0.4.11
     replicaCount: 3
