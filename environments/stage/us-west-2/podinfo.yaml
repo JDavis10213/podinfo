@@ -3,7 +3,6 @@ apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
   name: podinfo-stage
-  namespace: stage
   annotations:
     flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: glob:stg-*
