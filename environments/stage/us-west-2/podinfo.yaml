@@ -2,13 +2,13 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: podinfo-rc
-  namespace: stg
+  name: podinfo-stage
+  namespace: stage
   annotations:
     flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: glob:stg-*
 spec:
-  releaseName: podinfo-rc
+  releaseName: podinfo-stage
   chart:
     git: git@github.com:jdavis10213/podinfo
     path: charts/podinfo
@@ -17,7 +17,4 @@ spec:
     image: jdavis10213/podinfo:stg-t7i4phdx
     replicaCount: 2
     hpa:
-      enabled: true
-      maxReplicas: 10
-      cpu: 50
-      memory: 256Mi
+      enabled: false
